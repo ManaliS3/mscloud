@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <style>
+        .d1,.d4,.d7{
+    background-color: #c9cbcc;
+    grid-column: 1;
+    padding-top: 27px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.d2,.d5,.d8{
+    background-color: #c9cbcc;
+    padding-top: 27px;
+    grid-column: 2;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.d3,.d6,.d9{
+    background-color:#c9cbcc;
+    padding-top: 27px;
+    grid-column: 3;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+/* Default Screen - For Laptop and desktop*/
+.container{
+    border: 6px solid #72d9f2;
+    border-radius: 15px;
+    margin: 30px;
+    padding: 25px;
+    font-family: sans-serif;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    font-size: 80px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px;
+    gap: 25px;
+    font-weight: 500;
+}
+
+/* Mobile Screen */
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px){
+    .container {
+        display: block;
+        margin: 10px;
+        
+    }
+    .d1,.d2,.d3,.d4,.d5,.d6,.d7,.d8,.d9{
+        margin-bottom: 25px;
+        padding:30px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!-- Parent DIV -->
+    <div class="container">
+        <!-- Child DIVs -->
+        <div class="d1">A</div>
+        <div class="d2">B</div>
+        <div class="d3">C</div>
+        <div class="d4">D</div>
+        <div class="d5">E</div>
+        <div class="d6">F</div>
+        <div class="d7">G</div>
+        <div class="d8">H</div>
+        <div class="d9">I</div>
+    </div>
+</body>
+</html>
